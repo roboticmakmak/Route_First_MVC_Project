@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <center>
+            <a href="/Home/Index" class="btn btn-primary">Home</a>
+            <a href="/Home/AboutUs" class="btn btn-dark">About Us</a>
+            <a href="/Home/ContactUs" class="btn btn-danger">Contact Us</a>
+            <a href="/Home/Privacy" class="btn btn-secondary">Privacy</a>
+        </center>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="fixed-bottom">
+        <center>
+            Copyright &copy; Rough Academy @DateTime.Now.Year
+        </center>
+    </footer>
+</body>
